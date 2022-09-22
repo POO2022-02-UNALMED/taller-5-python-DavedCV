@@ -22,17 +22,13 @@ class Anfibio(Animal):
     @classmethod
     def crearRana(cls, nombre, edad, genero):
         cls.ranas += 1
-        anfibio = Anfibio(nombre, edad, "selva", genero, "rojo", True)
-        cls._listado.append(anfibio)
-        return anfibio
+        return Anfibio(nombre, edad, "selva", genero, "rojo", True)
 
     @classmethod
     def crearSalamandra(cls, nombre, edad, genero):
         cls.salamandras += 1
-        anfibio = Anfibio(nombre, edad, "selva", genero, "negro y amarillo", False)
-        cls._listado.append(anfibio)
-        return anfibio
-        
+        return Anfibio(nombre, edad, "selva", genero, "negro y amarillo", False)
+
     @classmethod
     def getListado(cls):
         return cls._listado
