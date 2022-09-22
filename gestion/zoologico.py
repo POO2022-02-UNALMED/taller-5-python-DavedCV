@@ -1,7 +1,7 @@
 from functools import reduce
 
 
-class Zoologico:
+class Zoloogico:
 
     def __init__(self, nombre, ubicacion):
         self._nombre = nombre
