@@ -11,13 +11,13 @@ class Animal:
         self._habitat = habitat
         self._genero = genero
         Animal._totalAnimales += 1
-        _zona = None
+        self._zona = None
 
     def movimiento():
         return ""
 
     def totalPorTipo():
-        return f"Mamiferos: {zooAnimales.mamifero.Mamifero.cantidadMamiferos()}\nAves: {zooAnimales.ave.Ave.cantidadAves()}\nReptiles: {zooAnimales.reptil.Reptil.cantidadReptiles()}\nPeces: {zooAnimales.pez.Reptil.cantidadPeces()}\nAnfibios: {zooAnimales.Anfibio.anfibio.cantidadAnfibios()}"
+        return f"Mamiferos: {zooAnimales.mamifero.Mamifero.cantidadMamiferos()}\nAves: {zooAnimales.ave.Ave.cantidadAves()}\nReptiles: {zooAnimales.reptil.Reptil.cantidadReptiles()}\nPeces: {zooAnimales.pez.Pez.cantidadPeces()}\nAnfibios: {zooAnimales.Anfibio.anfibio.cantidadAnfibios()}"
 
     def toString(self):
         if self._zona != None:
