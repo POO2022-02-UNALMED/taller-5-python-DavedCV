@@ -1,5 +1,4 @@
-from typing_extensions import Self
-from gestion.Zoologico import Zoloogico
+from gestion.zoologico import Zoloogico
 
 
 class Zona:

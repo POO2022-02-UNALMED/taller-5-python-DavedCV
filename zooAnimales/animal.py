@@ -1,8 +1,8 @@
-from Mamifero import Mamifero
-from Ave import Ave
-from Anfibio import Anfibio
-from Pez import Pez
-from Reptil import Reptil
+from mamifero import Mamifero
+from ave import Ave
+from anfibio import Anfibio
+from pez import Pez
+from reptil import Reptil
 
 class Animal:
     
