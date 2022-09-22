@@ -1,4 +1,4 @@
-from gestion.zoologico import Zoloogico
+from gestion.zoologico import Zoologico
 
 
 class Zona:
