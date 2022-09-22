@@ -3,10 +3,10 @@ from gestion.zoologico import Zoologico
 
 class Zona:
 
-    def __init__(self, nombre, zoo):
+    def __init__(self, nombre):
         self._nombre = nombre
         self._animales = []
-        self._zoo = zoo
+        #self._zoo = zoo
 
     def agregarAnimales(self, animal):
         animal._zona = self

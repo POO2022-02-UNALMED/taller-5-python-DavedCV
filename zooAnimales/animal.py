@@ -1,9 +1,5 @@
 import zooAnimales
-from zooAnimales import mamifero
-from zooAnimales import ave
-from zooAnimales import reptil
-from zooAnimales import pez
-from zooAnimales import anfibio
+
 
 class Animal:
     
@@ -21,7 +17,7 @@ class Animal:
         return ""
 
     def totalPorTipo():
-        return f"Mamiferos: {mamifero.cantidadMamiferos()}\nAves: {ave.cantidadAves()}\nReptiles: {reptil.cantidadReptiles()}\nPeces: {pez.cantidadPeces()}\nAnfibios: {anfibio.cantidadAnfibios()}"
+        return f"Mamiferos: {zooAnimales.mamifero.cantidadMamiferos()}\nAves: {zooAnimales.ave.cantidadAves()}\nReptiles: {zooAnimales.reptil.cantidadReptiles()}\nPeces: {zooAnimales.pez.cantidadPeces()}\nAnfibios: {zooAnimales.anfibio.cantidadAnfibios()}"
 
     def toString(self):
         if self._zona != None:
