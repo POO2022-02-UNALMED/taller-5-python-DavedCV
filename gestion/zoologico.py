@@ -13,7 +13,10 @@ class Zoologico:
         self._zonas.append(zona)
 
     def cantidadTotalAnimales(self):
-        return reduce(lambda acumulador, zona: acumulador+zona.cantidadAnimales(), self._zonas)
+        total = 0
+        for zona in self._zonas:
+            total += zona._cantidadAnimales()
+        return total
 
     def getNombre(self):
         return self._nombre
