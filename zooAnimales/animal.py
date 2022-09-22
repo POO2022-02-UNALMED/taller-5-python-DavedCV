@@ -1,8 +1,4 @@
-from zooAnimales.mamifero import Mamifero
-from zooAnimales.ave import Ave
-from zooAnimales.anfibio import Anfibio
-from zooAnimales.pez import Pez
-from zooAnimales.reptil import Reptil
+import zooAnimales
 
 class Animal:
     

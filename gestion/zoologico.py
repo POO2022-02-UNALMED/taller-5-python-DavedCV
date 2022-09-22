@@ -6,7 +6,7 @@ class Zoologico:
     def __init__(self, nombre, ubicacion):
         self._nombre = nombre
         self._ubicacion = ubicacion
-        _zonas = []
+        self._zonas = []
 
     def agregarZonas(self, zona):
         zona._zoologico = self
