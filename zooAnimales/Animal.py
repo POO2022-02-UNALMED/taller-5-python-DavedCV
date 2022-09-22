@@ -1,3 +1,9 @@
+from Mamifero import Mamifero
+from Ave import Ave
+from Anfibio import Anfibio
+from Pez import Pez
+from Reptil import Reptil
+
 class Animal:
     
     _totalAnimales = 0
@@ -8,15 +14,19 @@ class Animal:
         self._habitat = habitat
         self._genero = genero
         Animal._totalAnimales += 1
+        _zona = None
 
     def movimiento():
         return ""
 
     def totalPorTipo():
-        return "Mamiferos: #\nAves: \nReptiles: #\nPeces: #\nAnfibios: #"
+        return f"Mamiferos: {Mamifero.cantidadMamiferos()}\nAves: {Ave.cantidadAves()}\nReptiles: {Reptil.cantidadReptiles()}\nPeces: {Pez.cantidadPeces()}\nAnfibios: {Anfibio.cantidadAnfibios()}"
 
     def __str__(self):
-        return f"Mi nombre es {self._nombre}, tengo una edad de {self._nombre}, habito en {self._habitat} y mi genero es {self._genero}, la zona en la que me ubico es {self._zona.getNombre()}, en el {self._zoo.getNombre()}"
+        if self._zona != None:
+            return f"Mi nombre es {self._nombre}, tengo una edad de {self._nombre}, habito en {self._habitat} y mi genero es {self._genero}, la zona en la que me ubico es {self._zona.getNombre()}, en el {self._zoo.getNombre()}"
+        else:
+            return f"Mi nombre es {self._nombre}, tengo una edad de {self._nombre}, habito en {self._habitat} y mi genero es {self._genero}"
 
     def getNombre(self):
         return self._nombre
