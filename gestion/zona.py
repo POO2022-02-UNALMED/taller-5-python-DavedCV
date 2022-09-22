@@ -3,17 +3,17 @@ from gestion.zoologico import Zoologico
 
 class Zona:
 
-    def __init__(self, nombre):
+    def __init__(self, nombre, zoo):
         self._nombre = nombre
         self._animales = []
+        self._zoo = zoo
 
     def agregarAnimales(self, animal):
         animal._zona = self
         self._animales.append(animal)
 
-    @classmethod
-    def cantidadAnimales(cls):
-        return len(cls.animales)
+    def cantidadAnimales(self):
+        return len(self.animales)
 
     def getNombre(self):
         return self._nombre
